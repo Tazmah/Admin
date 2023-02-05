@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+</head>
+<link href="https://fonts.cdnfonts.com/css/br-firma" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="insight.css">
+
+<body>
+    <img src="/image/topStar.png" alt="" class="topStar">
+    <img src="/image/rightStar.png" alt="" class="rightStar">
+    <img src="/image/bottomStar.png" alt="" class="bottomStar">
+    <div class="grid-container">
+        <header class="header">
+            <div class="header__logo">
+                <img src="image/Logo.svg" alt="">
+            </div>
+            <div class="header__menue">
+                <button id="showNav">
+                    <i class="fas fa-bars-staggered"></i>
+                </button>
+            </div>
+        </header>
+        <!-- Sidebar Start -->
+        <aside class="sidebar" id="sidebar">
+            <div class="logo">
+                <img src="image/Logo.svg" alt="Logo">
+                <button id="closeNav">X</button>
+            </div>
+            <ul class="menues">
+                <li class="menueItems">
+                    <a href="/" class="active">
+                        <i class="fas fa-home"></i> <span>Home</span>
+                    </a>
+                </li>
+                <li class="menueItems">
+                    <a href="/">
+                        <i class="fas fa-chart-pie"></i> <span>Insight</span>
+                    </a>
+                </li>
+                <li class="menueItems">
+                    <a href="/" title="Notification">
+                        <i class="fas fa-bell"></i> <span>Notifications</span>
+                    </a>
+                </li>
+                <li class="menueItems">
+                    <a href="/">
+                        <i class="fas fa-user"></i> <span>Profile</span>
+                    </a>
+                </li>
+                <li class="menueItems">
+                    <a href="/">
+                        <i class="fas fa-qrcode"></i> <span>Qr Code</span>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+        <!-- Sidebar Ends -->
+
+        <!-- main Start -->
+        <main class="main-container">
+
+            <div class="userInfo">
+                <div class="userInfo__left">
+                    <h2>Welcome to Your Faysal</h2>
+                    <h1>Olumide</h1>
+                </div>
+                <div class="userInfo__right">
+                    <div class="profileImg">
+                        <img src="/image/profile.png" alt="">
+                    </div>
+                    <div class="userName">
+                        <h3>Olumide Ajayi</h3>
+                        <p>Faysal ID: LumiJay</p>
+                    </div>
+                </div>
+            </div>
+            <div class="activities">
+                <div class="left__activities">
+                    <div class="balance">
+                        <div class="balance__left">
+                            <div class="balance__tag">
+                                <p>Income</p>
+                            </div>
+                            <div class="balance__amount">
+                                <h2>₦3,520,100</h2>
+                            </div>
+
+                        </div>
+                        <hr>
+                        <div class="balance__left">
+                            <div class="balance__tag">
+                                <p>Expenses</p>
+                            </div>
+                            <div class="balance__amount">
+                                <h2>₦352,000</h2>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="activities__nav">
+                        <div class="activity">
+                            <div class="activity__info">
+                                <i class="fas fa-credit-card"></i>
+                            </div>
+                            <p>Bills</p>
+                        </div>
+                        <div class="activity">
+                            <div class="activity__info">
+                                <i class="fas fa-lock"></i>
+                            </div>
+                            <p>Ajo</p>
+                        </div>
+                        <div class="activity">
+                            <div class="activity__info">
+                                <i class="fas fa-cart-shopping"></i>
+                            </div>
+                            <p>Merchant</p>
+                        </div>
+                        <div class="activity">
+                            <div class="activity__info">
+                                <i class="fas fa-credit-card"></i>
+                            </div>
+                            <p>Voucher</p>
+                        </div>
+                    </div>
+                    <div class="promo__nav">
+                        <div class="balance__tag">
+                            <h3>Promos & Discounts</h3>
+                            <span>&#8594;</span>
+                        </div>
+                        <div class="promo__card">
+                            <img src="image/exchange.png" alt="">
+                            <div class="promo__info">
+                                <h4>30% off</h4>
+                                <h2>Black Friday Deal</h2>
+                                <p>Get discount for every top-up,
+                                    transfer and payment.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right__activities">
+                    <div class="recent__activities">
+                        <div class="balance__tag">
+                            <h3>Recent Activities</h3>
+                            <span>&#8594;</span>
+                        </div>
+                        <div class="recent__activity">
+                            <div class="recent__bell">
+                                <i class="fas fa-bell"></i>
+                            </div>
+                            <div class="recent__info">
+                                <h3>
+                                    Olumide Ajayi joined Halal Groups Inc.
+                                </h3>
+                                <p class="moreInfo">
+                                    Today, 12:03 AM
+                                </p>
+                            </div>
+                        </div>
+                        <div class="recent__activity">
+                            <div class="recent__bell">
+                                <i class="fas fa-bell"></i>
+                            </div>
+                            <div class="recent__info">
+                                <h3>
+                                    Olumide Ajayi joined Halal Groups Inc.
+                                </h3>
+                                <p class="moreInfo">
+                                    Today, 12:03 AM
+                                </p>
+                            </div>
+                        </div>
+                        <div class="recent__activity">
+                            <div class="recent__bell">
+                                <i class="fas fa-bell"></i>
+                            </div>
+                            <div class="recent__info">
+                                <h3>
+                                    Olumide Ajayi joined Halal Groups Inc.
+                                </h3>
+                                <p class="moreInfo">
+                                    Today, 12:03 AM
+                                </p>
+                            </div>
+                        </div>
+                        <div class="recent__activity">
+                            <div class="recent__bell">
+                                <i class="fas fa-bell"></i>
+                            </div>
+                            <div class="recent__info">
+                                <h3>
+                                    Olumide Ajayi joined Halal Groups Inc.
+                                </h3>
+                                <p class="moreInfo">
+                                    Today, 12:03 AM
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="balance">
+                        <div class="balance__left">
+                            <div class="balance__tag">
+                                <p>Available balance</p>
+                                <span>&#8595;</span>
+                            </div>
+                            <div class="balance__amount">
+                                <h2>₦3,520,100</h2>
+                            </div>
+                        </div>
+                        <div class="balance__right">
+                            <div>
+                                <i class="fas fa-paper-plane"></i>
+                            </div>
+                            <div>
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- main Ends -->
+
+    </div>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script> -->
+    <script src="script.js"></script>
+</body>
+
+</html>
