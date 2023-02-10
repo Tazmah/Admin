@@ -2,6 +2,19 @@
     display: grid;
     grid-template-columns: 1fr 0.6fr;
     gap: 30px;
+    grid-template-areas:
+        "a b"
+        "a b"
+    ;
+}
+
+.activities {
+    grid-area: a;
+}
+
+.activities__profile {
+    grid-area: b;
+
 }
 
 .main-container i {
@@ -18,6 +31,7 @@
 }
 
 .balance__right div {
+    cursor: point;
     color: var(--dark-green);
 }
 
@@ -27,8 +41,28 @@
     align-items: center;
 }
 
+
+.logout {
+    padding: 10px 20px;
+    border: 1px solid var(--very-light-green);
+    border-radius: 8px;
+    background: var(--very-light-green);
+    position: absolute;
+    bottom: 35px;
+}
+
 .activity__hidden {
     display: none;
+}
+
+.general hr {
+    border: 1px solid var(--very-light-green);
+}
+
+.general {
+    padding: 15px 5%;
+    width: 100%;
+
 }
 
 .activity__tag .tagIcon {
@@ -63,6 +97,83 @@
     width: 100%;
     background: var(--primary-color);
 }
+
+
+.transaction {
+    display: flex;
+}
+
+.transaction .btn#password {
+    background: var(--dark-green);
+    color: var(--white-color);
+}
+
+.password {
+    display: flex;
+    align-items: center;
+    background: var(--dark-green);
+    padding: 5px;
+    justify-content: space-between;
+}
+
+.password i {
+    margin-right: 5px;
+    color: var(--white-color);
+}
+
+
+
+.password input::placeholder {
+    color: var(--white-color);
+    color: var(--white-color);
+}
+
+
+.password input {
+    color: var(--white-color);
+    width: 80%;
+    background: transparent;
+    padding: 5px;
+    border: none;
+    outline: none;
+}
+
+.passwordInfo button,
+.transactionInfo button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.passwordInfo .btn,
+.transactionInfo .btn {
+    cursor: pointer;
+    background: var(--very-light-green);
+    padding: 10px 20px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+}
+
+.passwordInfo,
+.transactionInfo {
+    color: var(--grey-color);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.transactionInfo {
+    display: none;
+}
+
+.transaction .btn {
+    cursor: pointer;
+    background: var(--very-light-green);
+    padding: 10px 20px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+}
+
 
 .activities__profile {
     width: 100%;
@@ -129,4 +240,21 @@
 
 .userName {
     text-align: center;
+}
+
+
+@media screen and (max-width:810px) {
+    .main-container {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "b"
+            "a"
+        ;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .activity__tag .tagIcon {
+        display: none;
+    }
 }

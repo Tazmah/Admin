@@ -62,6 +62,11 @@
                     </a>
                 </li>
             </ul>
+            <li class="logout">
+                <a href="/">
+                    <span>LogOut</span>
+                </a>
+            </li>
         </aside>
         <!-- Sidebar Ends -->
 
@@ -92,21 +97,48 @@
                         </div>
                     </div>
                     <div class="activity__hidden">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem deleniti dolore quaerat ipsum dolor
-                        debitis eius cupiditate vero quos consequuntur exercitationem explicabo placeat laborum
-                        repudiandae odio, excepturi fugiat vitae error.
-                        Suscipit dicta facere perspiciatis asperiores. Voluptatum ex commodi quod porro expedita ea
-                        quasi excepturi. Ipsa itaque odit ea natus praesentium unde eius fugit aliquid provident, iure
-                        ut nesciunt, optio dolores.
-                        Harum doloribus quas eius omnis, molestiae fugiat? Culpa animi reiciendis porro, ex ipsa dicta
-                        consequuntur eveniet quis maxime sint eius vel amet pariatur magni possimus deserunt cum,
-                        repudiandae soluta labore.
-                        Culpa nobis unde, corporis reiciendis neque exercitationem tempora officiis placeat voluptas et
-                        dignissimos nihil mollitia magni eveniet voluptates eaque. Facere ex, iure animi excepturi ipsam
-                        pariatur voluptatibus. Fugit, velit dolore?
-                        Doloremque nostrum nemo, sint exercitationem incidunt delectus asperiores nihil corrupti magni
-                        molestiae accusamus blanditiis, reprehenderit assumenda quis perferendis. Molestias doloremque
-                        natus eum architecto odit corporis neque nesciunt dignissimos excepturi error.
+                        <div class="general">
+                            <div class="transaction">
+                                <button class="btn" id="password">Password</button>
+                                <button class="btn" id="transaction">Transaction Pin</button>
+                            </div>
+                            <br>
+                            <hr><br>
+                            <form class="passwordInfo" action="">
+                                <p>Current Password</p>
+                                <div class="password">
+                                    <input id="oldPasswordValue" type="password" value="Password">
+                                    <button type="button" class="showOldPassword">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                </div>
+                                <p>New Password</p>
+                                <div class="password">
+                                    <input id="newPasswordValue" type="password" value="Password">
+                                    <button type="button" class="showNewPassword">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                </div>
+                                <button type="submit" class="btn">Submit</button>
+                            </form>
+                            <form class="transactionInfo" action="">
+                                <p>Current Transaction</p>
+                                <div class="password">
+                                    <input id="oldPasswordValue" type="password" value="Password">
+                                    <button type="button" class="showOldPassword">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                </div>
+                                <p>New Password</p>
+                                <div class="password">
+                                    <input id="newPasswordValue" type="password" value="Password">
+                                    <button type="button" class="showNewPassword">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                </div>
+                                <button type="submit" class="btn">Submit</button>
+                            </form>
+                        </div>
                     </div>
                 </div>
                 <div class="activityInfo">
@@ -248,8 +280,6 @@
         <!-- main Ends -->
 
     </div>
-
-    <!-- <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script> -->
     <script src="script.js"></script>
 </body>
 
